@@ -7,9 +7,15 @@ The flow of the challenge can be illustrated below:
 
 ## 🚀 Setup and Installation
 
+### 1\. Installation
+Clone this GitHub repo:
+```
+git clone https://github.com/yenshan0530/2025-ADL-Final-Challenge-Release.git
+```
+
 Follow these steps to set up the environment and install the necessary dependencies.
 
-### 1\. Create the Conda Environment
+### 2\. Create the Conda Environment
 
 It's highly recommended to use a [Conda virtual environment](https://docs.conda.io/en/latest/miniconda.html) to manage dependencies.
 
@@ -18,12 +24,12 @@ conda create -n ADL-final python=3.12
 conda activate ADL-final
 ```
 
-### 2\. Install Dependencies
+### 3\. Install Dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3\. Data and Model Setup
+### 4\. Data and Model Setup
 
 #### Data
 The public dataset will be loaded from huggingface by default. The use dataset is [theblackcat102/ADL_Final_25W_part1](https://huggingface.co/datasets/theblackcat102/ADL_Final_25W_part1) There private dataset will be released on 12/8.
