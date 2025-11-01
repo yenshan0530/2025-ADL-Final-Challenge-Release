@@ -32,8 +32,10 @@ pip install -r requirements.txt
 ### 4\. Data and Model Setup
 
 #### Data
-The public dataset will be loaded from huggingface by default. The use dataset is [theblackcat102/ADL_Final_25W_part1](https://huggingface.co/datasets/theblackcat102/ADL_Final_25W_part1) There private dataset will be released on 12/8.
-`data/toy_data.jsonl` is provided for debugging and testing purposes only and is not involved in the final submission.
+The datasets will be loaded from huggingface by default.
+* The public dataset is [theblackcat102/ADL_Final_25W_part1](https://huggingface.co/datasets/theblackcat102/ADL_Final_25W_part1).
+* The private dataset will be released on 12/8.
+* `data/toy_data.jsonl` is provided for debugging and testing purposes only and is not involved in the final submission.
 
 #### Models
 All models will be loaded from huggingface directories by default. You can move the models into `models/` and specify the path to models if you like.
