@@ -7,10 +7,10 @@ from datasets import load_dataset, Dataset
 import sys
 
 # --- Configuration ---
-DEFAULT_DATASET_PATH = "data/public" # or data/private or toy_data.jsonl
-DEFAULT_SAFETY_MODEL = "models/Qwen3Guard-Gen-0.6B"
-DEFAULT_USEFULNESS_MODEL = "models/Toxic-usefulness-Qwen-1.7B-beta"
-DEFAULT_CHAT_MODEL = "models/Llama-3.2-3B-Instruct"
+DEFAULT_DATASET_PATH = "theblackcat102/ADL_Final_25W_part1" # or data/private or toy_data.jsonl
+DEFAULT_SAFETY_MODEL = "Qwen/Qwen3Guard-Gen-0.6B"
+DEFAULT_USEFULNESS_MODEL = "theblackcat102/Toxic-usefulness-Qwen-1.7B-beta"
+DEFAULT_CHAT_MODEL = "unsloth/Llama-3.2-3B-Instruct"
 DEFAULT_ALGORITHM_NAME = "evaluate_rewrite"
 
 def _get_common_args():

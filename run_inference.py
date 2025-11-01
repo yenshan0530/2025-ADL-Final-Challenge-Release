@@ -54,10 +54,11 @@ def _load_original_dataset(DATASET_PATH: str) -> Dataset:
             dataset_dict = load_dataset('json', data_files=DATASET_PATH)
         else:
             raise ValueError(f"Unsupported single file type: {file_extension}. Must be .jsonl or a directory/Hub ID.")
-    elif os.path.isdir(DATASET_PATH) or DATASET_PATH == DEFAULT_DATASET_PATH:
+    elif (not os.path.isdir(DATASET_PATH)) or DATASET_PATH == DEFAULT_DATASET_PATH:
         print("Detected directory or Hugging Face Hub ID. Loading conventionally.")
         dataset_dict = load_dataset(DATASET_PATH)
     else:
+        print('what??')
         raise FileNotFoundError(f"Path not found: {DATASET_PATH}")
 
     split_name = list(dataset_dict.keys())[0]
