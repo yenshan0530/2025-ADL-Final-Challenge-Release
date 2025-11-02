@@ -26,6 +26,7 @@ conda activate ADL-final
 
 ### 3\. Install Dependencies
 ```bash
+cd 2025-ADL-Final-Challenge-Release
 pip install -r requirements.txt
 ```
 
