@@ -148,7 +148,7 @@ python run_eval.py
 Here are descriptions of the arguments:
 |Argument|Description|
 |---|---|
-|`--dataset-path`|Path to the same dataset used during inference.|
+|`--dataset`|Path to the same dataset used during inference.|
 |`--algorithm`|Algorithm name matching the inference step (used to locate results).|
 |`--guard-model`|Path or Hugging Face ID for the safety judge model. Default: `Qwen/Qwen3Guard-Gen-0.6B`|
 |`--usefulness-model`|Path or Hugging Face ID for the usefulness judge. Default: `theblackcat102/Qwen3-1.7B-Usefulness-Judge`|
@@ -161,7 +161,7 @@ Here are descriptions of the arguments:
 **Example (custom models):**
 ```bash
 python run_eval.py \
-  --dataset-path data/toy_data.jsonl \
+  --dataset data/toy_data.jsonl \
   --algorithm my_custom_algorithm \
   --guard-model "meta-llama/Llama-Guard-3-8B" \
   --usefulness-model "theblackcat102/Qwen3-1.7B-Usefulness-Judge"
